@@ -46,7 +46,7 @@ public class PayementController {
     @Autowired
     private EmailService emailService;
 
-    private static String merchantSecret = "MTE2NzUxMzIwMTE2NjA5NTU1MTQxMjczMDU5ODgxNDIxNDE0OTY2OQ==";
+    private static String merchantSecret = "";
 
     @PostMapping("/travelmate/pay/confirmation")
     public ResponseEntity<String> handlePaymentConfirmation(@RequestParam Map<String, String> params) {
